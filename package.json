@@ -1,31 +1,49 @@
 {
-  "name": "starter-discord-bot",
+  "name": "spinkles-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A discord bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "start":"node index.js"
+    "start": "nodemon --exec babel-node -- src/index.js",
+    "flow": "flow"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/korostelevm/starter-discord-bot.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/korostelevm/starter-discord-bot/issues"
-  },
-  "homepage": "https://github.com/korostelevm/starter-discord-bot#readme",
   "dependencies": {
-    "axios": "^0.27.2",
-    "body-parser": "^1.20.0",
-    "discord-interactions": "^3.2.0",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1"
+    "@discordjs/core": "^1.0.1",
+    "axios": "^0.19.2",
+    "babel-core": "^6.26.0",
+    "discord.js": "^12.3.1",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-flow": "^7.10.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-inline-dotenv": "^1.5.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "flow-bin": "^0.127.0",
+    "nodeman": "^1.1.2",
+    "prettier": "^2.0.5"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
   }
 }
