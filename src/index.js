@@ -90,4 +90,4 @@ const onMessageReceived = (message) => {
 
 discordClient.once(events.READY, onReady);
 discordClient.on(events.MESSAGE, onMessageReceived);
-discordClient.login(`MTE0OTQ0MTMyNTA1NDMxMjU1MA.GxWuxx.cAy36Ye2F5RsF74hXdnztHR6ClX8ZUz7nTR1sI`);
+discordClient.login(`${process.env.TOKEN}`);
